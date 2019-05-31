@@ -45,7 +45,7 @@ while True:
         cv2.imshow("retvalbin", retvalbin) #@
         # creates contours
         # cv2.imshow('bins',bins)
-        im2, contours, hierarchy = cv2.findContours(bins, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, hierarchy = cv2.findContours(bins, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         minarea = 400
         # max area for contours, can be quite large for buses
